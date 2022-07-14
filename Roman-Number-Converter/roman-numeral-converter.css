@@ -1,0 +1,58 @@
+body {
+  background: white;
+}
+
+main {
+  background-color: grey;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 1px 1px 3px #060c3b;
+  font-size: 4em;
+  font-weight: 800;
+  color: #9fc3d8;
+  text-align: center;
+}
+
+.conversor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 40px;
+  padding-top: 0;
+  margin: 100px;
+  color: white;
+}
+
+.conver-el {
+  text-align: center;
+  font-family: inherit;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  margin-top: 50;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background-color: #1c70a1;
+  color: white;
+  font-family: inherit;
+  font-size: 3em;
+}
+
+button:hover {
+  background-color: #2b94d1;
+}
+/*# sourceMappingURL=roman-numeral-converter.css.map */
