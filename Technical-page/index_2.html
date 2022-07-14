@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="style.css">
+    <title>My Technical Documentation page</title>
+</head>
+<body>
+    
+    <nav id="navbar">
+        <h1>My Technical Documentation page</h1>
+        <ul>
+            <li class="nav-link"><a href="#two_sides">Two sides</a></li>
+            <li class="nav-link"><a href="#HTML5">HTML5</a></li>
+            <li class="nav-link"><a href="#CSS3">CSS3</a></li>
+            <li class="nav-link"><a href="#Media_querries">Media querries</a></li>
+
+            <li class="nav-link"><a href="#JavaScript">JavaScript</a></li>
+            <li class="nav-link"><a href="#PHP">PHP</a></li>
+
+
+        </ul>
+
+    </nav>
+    <main id="main-doc">
+        <h2>Web development</h2>
+        <p>This document embraces all the information I have recolected so far during my <em> development learning process</em>. It's just a simple web page.</p>
+        
+    <section class="main-section" id="two_sides">
+        <h2>Two sides</h2>
+        <p>This is a small section in content, but very big in importance. In order to accomplish web development, it is crucial to understand that the developer or developers are moving from a series of technical processes to a public environment that shows the web to the world. For this reason, there are some languajes that are procesed on the server side, whereas others are procesed on the browser side.</p>
+    </section>
+    <span class="espacio"></span>
+    <section class="main-section" id="HTML5">
+        <h2>HTML5</h2>
+        <p>HTML it's a tag languaje. The actual version is HTML5. This version is much more versatile than previous ones. In its beginning HTML was very simple. Every piece of information which appeared in the page was settled inside the <code>body</code> tag. There was, of course the <code>head</code> tag with all the technical information the page neded. And at the same time all was inside the <code>html</code> tag. But that was all.</p>
+        <p>HTML5 is the semantic version of HTML. It includes new tags which have a specific purpose. For instance:</p>
+        <ul>
+            <li>The nav-bar in wich the menu with the links is settled uses the <code>nav</code> tag.</li>
+           <li>The purpose of the <code>article</code> tag is to divide the main secction of the page in well defined pieces of information.</li>
+            <li>Usually the pages have a seccion of related content wchich is placed using the <code>aside</code> tag.</li>
+            <li>At the bottom of the page the <code>footer</code> tag display our policies, our contact information or whatever we want to higlight so that our visitors can find what they are looking for.</li>
+        </ul>
+    </section>
+    <span class="espacio"></span>
+    <section class="main-section" id="CSS3">
+        <h2>CSS3</h2>
+        <p>CSS is the web make up. The actual version is CSS3. The way in wich developers make use of this technology has changed through time.</p>
+        <p>In the early stages of web development, there was no special place to include CCS. Developers inserted small pieces of code inside the tag which was goin to be affected by its modification.</p>
+        <p>Later on, the code evolved and become more organized. The CSS was placed inside <code>style</code> tag, in the head of he document.</p>
+        <p>Nowadays, CCS3 has its own document which is linked from the HTML document.</p>
+        <p>But not just its placement has changed. With each version CSS has increased its power. Nothing to do with its first years in which CSS was used to change a font, a color or the formatting of a paragraph. Now it is possible to design images and even to create animations.</p>
+        <p>The only tool the developer had before in order to organise the content was the <code>table</code> element. But this has changed as well. An important characteristic of CSS is the ability it provides the developer to place each object on the page, with resources such as <code>flex</code> or <code>grid.</code>For instance the following snipet used in this page.</p>
+        <div class="pareja">
+        <div class="fondo_claro">
+        <pre>
+        <code class="sin_color">
+        body {
+            width: 90%;
+            margin: 2em auto;
+                    
+            font:.9em/1.2 Arial, Helvetica, sans-serif;  
+                
+            display: grid;
+            grid-template-columns: 
+            repeat(13, minmax(0,1fr));
+            gap: 10px;
+                 
+        }
+        #navbar{
+            grid-column: 1/4;
+            grid-row: 1;
+                
+            background-color: rgba(91, 204, 195, 1);
+            color: white;
+            align-items: center;
+            align-content: center;
+        }
+        #main-doc{
+            grid-column: 4/13;
+            grid-row: 1;
+        }
+        footer{
+            grid-column: 1/13;
+            grid-row: 2;
+            padding: 30px;
+            background-color: blueviolet;
+            color: #fff;
+            text-align: center;
+        }
+    </code>
+    </pre>
+    </div>
+    </div>
+    </section>
+    <span class="espacio"></span>
+    <section class="main-section" id="Media_querries">
+        <h2>Media querries</h2>
+        <p>Media querries are implemented inside CSS. The purpose of media querries is to create responsive pages, which means pages that adapt perfectly to the viewport, the device used in each case.</p>
+        <p>They allow to apply style in a different way to the same section regarding each device. So for instance, taking as an example this page, the script:</p>
+        <div class="pareja">
+        <div class="fondo_claro">
+        <pre><code class="sin_color">
+            @media (max-width:600px) {
+            /*All this controls the mobile version*/  
+           body{
+               /*This makes the content to 
+               be displayed in column*/ 
+                display: flex;
+                flex-flow: column;
+            }
+            nav li{
+                /*This makes the navbar 
+                to be displayed in two 
+                rows to minimise space*/
+               
+                margin-top: 5px;
+                display: inline-block;
+               
+            }
+            #navbar{
+                /*This makes the navbar 
+                to be always visible*/
+                position: sticky;
+                top: 0px;
+            }
+            
+        }
+    </code></pre>
+</div>
+<br>
+<div class="fondo_claro">
+    <pre><code class="sin_color">
+        @media (min-width:600px){
+            /*With this I have a two columns 
+            layout but just 
+            for bigger devices*/
+            #HTML5{
+                columns:2;
+                column-gap: 50px;
+                column-rule: 3px solid blueviolet;  
+            }
+            .pareja{
+                /*This controls the apearance 
+                of this two pink blocks*/
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    </code></pre>
+</div>
+</div>
+
+    </section>
+    <span class="espacio"></span>
+    <section class="main-section" id="JavaScript">
+        <h2>JavaScript</h2>
+        <p>JavaScrip is, as everybody knows, what makes a website dynamic. It has a lot of potential. JavaScript supports functions, variables, constructors...</p>
+        <p>All of this makes the page react to the user actions. Any time the visitor press a button or enter a word in a form, the page shows a reaction as a consecuence. This is due to JavaScript.</p>
+        <p>Thanks to JavaScript it is posible to access to a specific item inside a matrix, or change a bit of text inside a string in a precise position.</p>
+
+    </section>
+    <span class="espacio"></span>
+    <section class="main-section" id="PHP">
+        <h2>PHP</h2>
+        <p>All the languages seen so far are accesible from the browser. PHP is a server side language. It is used to manage delicate data such as forms, passwords and so on. In this way or websites are more secure.</p>
+
+    </section>
+    
+   
+    </main>
+
+</body>
+<footer>
+    Carmen Torralvo &copy; 2021
+</footer>
+</html>

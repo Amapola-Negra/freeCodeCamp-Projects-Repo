@@ -1,0 +1,124 @@
+body {
+    width: 90%;
+    margin: 2em auto;
+    
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(13, minmax(0,1fr));
+    gap: 10px;
+ 
+ }
+ #navbar{
+    grid-column: 1/4;
+    grid-row: 1;
+
+    background-color: rgba(91, 204, 195, 1);
+    color: white;
+    align-items: center;
+    align-content: center;
+}
+#main-doc{
+    grid-column: 4/13;
+    grid-row: 1;
+}
+footer{
+    grid-column: 1/13;
+    grid-row: 2;
+    padding: 30px;
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 1px 2px #000;
+}
+p{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+li{
+    font-size: 1.2em;
+}
+
+nav li{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: black;
+    
+    border-radius: 5px;
+    list-style: none;
+    
+    display: flex;
+    flex-flow: column;
+ 
+}
+a{
+  text-decoration: none; 
+   color: white; 
+}
+
+nav li:hover{
+    background-color: blueviolet;
+}
+
+code{
+    background-color: rgba(192, 167, 216, 0.356);
+}
+.sin_color{
+    background-color:rgba(192, 167, 216, 0);
+}
+.fondo_claro{
+    background-color: rgba(192, 167, 216, 0.356);
+}
+.espacio{
+    margin: 60px;
+}
+/*_______________RESPONSIVE DESIGN_____________*/
+@media (max-width:600px) {
+    /*All this controls the mobile version*/
+   body{
+       /*This makes the content to be displayed in column*/ 
+        display: flex;
+        flex-flow: column;
+    }
+    nav li{
+        /*This makes the navbar to be displayed in two rows to minimise space*/
+       
+        margin-top: 5px;
+        display: inline-block;
+       
+    }
+    #navbar{
+        /*This makes the navbar to be always visible*/
+        position: sticky;
+        top: 0px;
+    }
+    
+}
+@media (min-width:600px){
+    /*With this I have a two columns 
+    layout but just 
+    for bigger devices*/
+    #HTML5{
+        columns:2;
+        column-gap: 50px;
+        column-rule: 3px solid blueviolet;
+    }
+    .pareja{
+        /*This controls the apearance 
+        of this two pink blocks*/
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    h1{
+        margin-bottom: 60px;
+    }
+}
