@@ -5,5 +5,5 @@
   <li><a href="Random-Quote-Machine/">Random Quote Machine</a></li>
   <li><a href="Technical-page/">Technical Page</a></li>
   <li><a href="https://github.com/Amapola-Negra/Portfolio/">Portfolio</a></li>
-  <li><a href="https://github.com/Amapola-Negra/Best-Product-Landing-Page/">Best Product Landing Page</a></li>
+  <li><a href="Best-Product-Landing-Page/">Best Product Landing Page</a></li>
 </ul>
