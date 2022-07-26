@@ -1,0 +1,220 @@
+body{
+    box-sizing: border-box;
+    width: 90%;
+    margin: 2em auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  /*_________________Typography_________________*/
+  #rotulo{
+    font-size: 3em;
+    font-weight: 800;
+  }
+  h1{
+    font-size: 2.5em;
+  }
+  h2, 
+  h3, 
+  h4, 
+  .accent{
+    color: rebeccapurple;
+  }
+  h2,
+  .accent{
+    margin-top: 0;
+  }
+  h2{
+    font-size: 2em;
+  }
+  h3{
+    font-size: 1.8em;
+  }
+  h4, 
+  p{
+    font-size: 1.4em;
+  }
+  h4{
+    margin-bottom: 0;
+  }
+  p{
+    letter-spacing: 0.02em;
+    line-height: 1.6em;
+  }
+  .action h2{
+    color:rgb(228, 187, 228);
+    text-shadow: 1px 2px 4px black;
+  }
+  #video{
+    max-width: 100%;
+  }
+  #blog img{
+    width: 200px;
+    height: 200px;
+  }
+  /*_____________________Navegation___________________*/
+  
+  a{
+    color:white;
+    font-size: 1.3em;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #46D0A4;
+  }
+  nav {
+    background-color: rebeccapurple;
+    padding: 1em 3em;
+  }
+  nav ul{
+    list-style: none;
+    padding: 0;
+  }
+  nav li{
+    display: inline-block;
+    margin: 5px;
+  }
+  /*________________Layout_________________________*/
+  header{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .title-group{
+    display: flex;
+    align-items: center;
+  }
+  #header-img{
+    width: 80px;
+    margin-right: 5px;
+  }
+   main{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome, 
+  .cols{
+    margin-bottom: 3em;
+  }
+  .cols{
+    display: flex;
+    justify-content: space-between;
+  }
+  .action{
+    background-image: url("images/DSCN0994.JPG");
+    width: 55%;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact{
+    background: rgba(212, 212, 212, 0.733);
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  #form{   
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: space-between;
+  }
+  #form input{
+    padding: 1em;
+    border-radius: 15px;
+    border: none;
+    font-size: inherit;
+    margin-bottom: 1em;
+  }
+  .video{
+    width: 55%;
+  }
+  #blog{
+    width: 35%;
+  }
+  .post{
+    display: flex;
+    justify-content: space-around;
+  }
+  .post-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer{
+    background: rebeccapurple;
+    padding: 2em;
+    color: white;
+    text-align: center;
+  }
+  button{
+    background: rebeccapurple;
+    color: white;
+    font-family: inherit;
+    font-size: 1.5em;
+    padding: 1em 2em;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .contact button{
+    padding: 1em;
+    font-size: 1em;
+  }
+  button:hover{
+    background: rgb(136, 101, 170);
+  }
+  /*_____________Responsive________________________*/
+  
+  @media (max-width: 600px){
+      header{
+        flex-flow: column;
+        padding: 0;
+      }
+      nav{
+        margin-left: 0;
+        padding: 2em;
+      }
+      .title-group{
+        padding:0 1em;
+      }
+      .title-group #rotulo{
+        text-align: center;
+      }
+      main{
+        text-align: center;
+      }
+      .cols{
+        flex-direction: column;
+        align-items:center;
+        align-content: center;
+        justify-content: space-around;
+
+      }
+      .video, 
+      .action, 
+      #blog{
+        width: 100%;
+      }
+      .post{
+        flex-flow: column;
+        align-items: center;
+      }
+      .post-item{
+        margin: 1em;
+      }
+      .contact{
+        width: 90%;
+        padding: 1em;
+      }
+      .action, 
+      .video{
+        margin-bottom: 3em;
+      }
+  }

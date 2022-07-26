@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>The Best Product Landing Page</title>
+      <link href="style.css" rel="stylesheet">
+  </head>
+ <body>
+<header id="header">
+  <div class="title-group">
+    <img src="images/logo.png" id="header-img" alt="Logo">
+    <h1 id="rotulo">The Best Product Landing Page</h1>
+  </div>
+  <nav id="nav-bar">
+    <ul>
+      <li><a href=""class="nav-link"> Inicio</a></li>
+      <li><a href="#video" class="nav-link"> See the Best</a></li>
+      <li><a href="#blog" class="nav-link"> Blog</a></li>
+      <li><a href="#form" class="nav-link"> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="welcome">
+        <h1>Welcome</h1>
+        <p>This is my page dedicated to happiness. Happiness is what everybody needs. Surround yourself with everything that makes you happy. Share your joy with those less fortunate. It's up to you to make the world a better place. <strong class="accent">Don't you think happiness is the best product the world over?</strong></p>
+      </div><!--__________close welcome-->
+      <div class="cols">
+        <div class="action">
+          <h2>Do you want to be happy?</h2>
+          <button>I want to be happy!</button>
+        </div>
+        <div class="contact">
+          <h2>Contact Form</h2>
+          <p>Feel free to write. Just fill in the form and tell me what you think. I would be glad to help you. See you soon.</p>
+          <form id="form"  action="https://www.freecodecamp.com/email-submit">
+            <div>
+              <label name="email">Email:</label> 
+              <input type="email" name="email" id="email" placeholder="enter your email" required />
+            </div>
+            <button type="submit" id="submit" value="Submit">Submit</button>
+          </form>
+        </div>
+      </div><!--__________close first cols-->
+      <div class="cols">
+        <div class="video">
+          <h2>See the Best</h2>
+        <video id="video" controls>
+          <source src="images/Movie.mp4" type="video/mp4">
+        </video>
+        </div> 
+        <div id="blog">
+          <h2>Blog</h2>
+          <p>Hi everybody. This is your seccion. Here I'm going to collect the most interesting post the world over. Just wait and see. </p>
+          <h3>Last post</h3>
+          <div class="post">
+            <div class="col-post">
+              <div class="post-item one">
+                <img src="/images/DSCN0961.JPG">
+                <h4>Give flowers</h4>
+                <a href="#" class="accent">See more...</a>
+              </div>
+            </div>
+            <div class="col-post">
+              <div class="post-item three">
+                <img src="/images/DSCN1024.JPG">
+                <h4>Flowers are life</h4>
+                <a href="#" class="accent">See more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--__________close second cols-->
+    </main>
+  </body>
+  <footer>&copy; Mamen</footer>		
+</html>
