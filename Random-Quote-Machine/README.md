@@ -5,4 +5,4 @@ This app displays random quotes.
 <img src="RANDOM-QUOTES.PNG" width="400px">
 
 ## See it live
-<a href="https://amapola-negra.github.io/freeCodeCamp-Projects-Repo/Random-Quote-Machine/dist/">Random Quotes Machine</a>
+<a href="https://amapola-negra.github.io/freeCodeCamp-Projects-Repo/Random-Quote-Machine/public/">Random Quotes Machine</a>
