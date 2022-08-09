@@ -1,5 +1,5 @@
 ## Purpose 
-This app displays random quotes.
+This app displays random quotes using REACT.
 
 ## Screenshot
 <img src="RANDOM-QUOTES.PNG" width="400px">
